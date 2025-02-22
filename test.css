@@ -28,3 +28,25 @@ section p{
     margin:10px;
     max-width:300px;
 }
+/*4tth question*/
+.navbar{
+    display:flex;
+    
+}
+.nav-items a{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+/*6th*/
+.button{
+    background-color:blue;
+
+}
+.button:hover{
+    background-color:darkblue;
+    transition:0.3s;
+}
+.text{
+    color:white;
+}
