@@ -31,13 +31,11 @@ section p{
 /*4tth question*/
 .navbar{
     display:flex;
+    gap:30px;
+    align-content:center;
     
 }
-.nav-items a{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-}
+
 /*6th*/
 .button{
     background-color:blue;
@@ -49,4 +47,34 @@ section p{
 }
 .text{
     color:white;
+}
+
+/*7th*/
+.button2{
+    width:150px;
+    height:50px;
+
+}
+.button2:hover{
+    scale: 1.2em;
+    transition:scale 2em;
+}
+/*box*/
+.box{
+    position: relative;
+    animation: slide 2s infinite alternate;
+}
+/*12th*/
+h1{
+    font-size:4rem;
+}
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; 
+    }
 }
