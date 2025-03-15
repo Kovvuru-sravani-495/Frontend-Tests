@@ -1,0 +1,169 @@
+/*5h question*/
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 10px;
+}
+@media(max-width){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*8th question*/
+
+button{
+    background-color: blue;
+    color: white;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: darkblue;
+}
+.btn{
+    width: 150px;
+    height:50px;
+    transition: transform 0.3s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.2) ;
+}
+    .box {
+        width: 200px;
+        height: 100px;
+        background-color: darkblue; 
+        position: relative;
+        animation: slide 2s linear infinite; 
+        }
+        @keyframes slide {
+        from {
+            left: 0; 
+        }
+        to {
+            left: 300px;
+        }
+}
+
+/*9th question*/
+.body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box2 {
+    width: 150px;
+    height: 150px;
+    background-color: lightcoral;
+    position: absolute;
+    top: 45%; /* Adjusted to overlap */
+    left: 45%; /* Adjusted to overlap */
+    z-index: 1; /* Higher z-index to appear above box1 */
+    transform: translate(-50%, -50%);
+}
+
+/*10th question*/
+:root{
+    --main-color:#8888;
+
+}
+header,main{
+   background-color:var(--main-color);
+    
+}
+@media screen and (max-width:768px){
+    :root{
+        --main-color:#1111;
+    }
+}
+
+/*11th question*/
+.hero{
+    background-image:url("https://www.google.com/imgres?q=hero&imgurl=https%3A%2F%2Fmotoroctane.com%2Fwp-content%2Fuploads%2F2020%2F04%2FHero-Glamour-e1587203978553.jpg&imgrefurl=https%3A%2F%2Fmotoroctane.com%2Fnews%2F35232-hero-glamour-ismart-125cc-price-features&docid=b_cXfHB1y_jCBM&tbnid=r5W0vBAQyR3DJM&vet=12ahUKEwjVmbzbk96LAxUCUGwGHTBlOd4QM3oECCwQAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwjVmbzbk96LAxUCUGwGHTBlOd4QM3oECCwQAA");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    text-align:center;
+    color:white;
+}
+@media screen and (max-width:768px){
+    .hero{
+        padding:20px;
+    }
+
+}
+
+
+/*13th question*/
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px; 
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    filter: grayscale(0%);
+}
+
+
+/*14th question*/
+.selection h1::selection {
+    background-color: #ffcc00;
+    color: #000; 
+}
+
+/*15th question*/
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+
